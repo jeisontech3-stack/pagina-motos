@@ -1,0 +1,338 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+main {
+    padding-top: 80px; /* Ajusta para el header fijo */
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background-image: url('../images/hero_motorcycle.jpg'); /* Imagen de fondo para la sección hero */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+/* Estilos para el formulario de contacto */
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto form input[type="text"],
+#contacto form input[type="email"],
+#contacto form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contacto form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contacto form button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto form button:hover {
+    background-color: #e65c00;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px 10px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0 5px 5px 5px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
+
+
+/* Estilos para Tipos de Motocicletas */
+.tipo-moto {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+.tipo-moto h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 10px;
+}
+
+.tipo-moto p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.tipo-moto strong {
+    color: #ff6600;
+}
+
+/* Estilos para las listas en Novedades y Mantenimiento */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #ff6600;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+ul li strong {
+    color: #ff6600;
+}
+
+/* Estilos para imágenes */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Transición suave para el header */
+header {
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el hero con overlay oscuro */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero {
+    position: relative;
+}
+
+/* Estilos para el botón del formulario con efecto hover mejorado */
+#contacto form button {
+    position: relative;
+    overflow: hidden;
+}
+
+#contacto form button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+#contacto form button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Mejoras en la tipografía */
+h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Estilos para mejorar la legibilidad */
+section {
+    line-height: 1.8;
+}
+
+/* Animación de entrada para las imágenes */
+.image-container img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
